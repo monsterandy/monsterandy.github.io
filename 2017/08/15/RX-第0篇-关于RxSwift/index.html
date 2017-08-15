@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS," />
 
 
 
@@ -95,6 +95,7 @@
 
 
 <meta name="description" content="第0篇 关于RxSwift为什么是RxSwift？相对于Objc，swift契合响应式编程框架有以下几点：  强类型，强类型的范型 灵活的闭包 对并发类型的原生支持（Swift5新特性，还未发布）  Enum的关联值和范型Swift中的枚举（Enum）是一个完整的类型。而是一个完整的类型。和 Struct 一样，可以给他定义初始化方法，声明函数，添加扩展。同样的泛型同样也试用于 Enum。枚举还有">
+<meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[RX]第0篇 关于RxSwift">
 <meta property="og:url" content="http://yoursite.com/2017/08/15/RX-第0篇-关于RxSwift/index.html">
@@ -102,7 +103,7 @@
 <meta property="og:description" content="第0篇 关于RxSwift为什么是RxSwift？相对于Objc，swift契合响应式编程框架有以下几点：  强类型，强类型的范型 灵活的闭包 对并发类型的原生支持（Swift5新特性，还未发布）  Enum的关联值和范型Swift中的枚举（Enum）是一个完整的类型。而是一个完整的类型。和 Struct 一样，可以给他定义初始化方法，声明函数，添加扩展。同样的泛型同样也试用于 Enum。枚举还有">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ws3.sinaimg.cn/large/006tKfTcly1fhoe4xjo74j30cs02374i.jpg">
-<meta property="og:updated_time" content="2017-08-15T13:35:54.000Z">
+<meta property="og:updated_time" content="2017-08-15T13:40:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[RX]第0篇 关于RxSwift">
 <meta name="twitter:description" content="第0篇 关于RxSwift为什么是RxSwift？相对于Objc，swift契合响应式编程框架有以下几点：  强类型，强类型的范型 灵活的闭包 对并发类型的原生支持（Swift5新特性，还未发布）  Enum的关联值和范型Swift中的枚举（Enum）是一个完整的类型。而是一个完整的类型。和 Struct 一样，可以给他定义初始化方法，声明函数，添加扩展。同样的泛型同样也试用于 Enum。枚举还有">
@@ -344,28 +345,27 @@
 <p><img src="https://ws3.sinaimg.cn/large/006tKfTcly1fhoe4xjo74j30cs02374i.jpg" alt=""></p>
 <h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><p>这里介绍一下新手很容易忽略的语法糖</p>
 <h4 id="闭包简化语法"><a href="#闭包简化语法" class="headerlink" title="闭包简化语法"></a>闭包简化语法</h4><ul>
-<li><p>闭包参数、返回值类型自动推断</p>
-<p>  因为Swift是强类型语言，闭包的参数的类型可以推断出来。例如以下代码：</p>
-  <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; (s1: <span class="type">String</span>, s2: <span class="type">String</span>) -&gt; <span class="type">Bool</span> <span class="keyword">in</span></div><div class="line"> <span class="keyword">return</span> s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-</li>
+<li>闭包参数、返回值类型自动推断</li>
 </ul>
-<pre><code>s1和s2的类型和返回值类型Xcode可以推断出来，可省略：
-
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; (s1, s2)  <span class="keyword">in</span></div><div class="line"> <span class="keyword">return</span> s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-</code></pre><ul>
-<li><p>闭包表达式只有一行，可以省略<code>return</code></p>
-<p>  因为只有一行，表达式执行的结果肯定就是要返回的值，所以可以省略：</p>
-  <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; </div><div class="line">        (s1, s2)  <span class="keyword">in</span>   s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-</li>
-<li><p>用<code>$N</code>代替参数</p>
-<p>  有时候实参的参数名没什么用，可以直接用<code>$N</code>代替实参，<code>$0</code>代表第一个参数。上面的代码简化后就变成这样：</p>
-  <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by:  &#123; $<span class="number">0</span> &gt; $<span class="number">1</span> &#125;)</div></pre></td></tr></table></figure>
-</li>
-<li><p>二元运算时可以直接省略只用操作符表示</p>
-<p>  当表达式只有一行时，二元运算的表达式可以直接省略到只剩一个运算符，最终可以简化为：</p>
-  <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by:  &gt;)</div></pre></td></tr></table></figure>
-</li>
+<p>因为Swift是强类型语言，闭包的参数的类型可以推断出来。例如以下代码：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; (s1: <span class="type">String</span>, s2: <span class="type">String</span>) -&gt; <span class="type">Bool</span> <span class="keyword">in</span></div><div class="line"><span class="keyword">return</span> s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>s1和s2的类型和返回值类型Xcode可以推断出来，可省略：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; (s1, s2)  <span class="keyword">in</span></div><div class="line"><span class="keyword">return</span> s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ul>
+<li>闭包表达式只有一行，可以省略<code>return</code></li>
 </ul>
+<p>因为只有一行，表达式执行的结果肯定就是要返回的值，所以可以省略：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; </div><div class="line">       (s1, s2)  <span class="keyword">in</span>   s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ul>
+<li>用<code>$N</code>代替参数</li>
+</ul>
+<p>有时候实参的参数名没什么用，可以直接用<code>$N</code>代替实参，<code>$0</code>代表第一个参数。上面的代码简化后就变成这样：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by:  &#123; $<span class="number">0</span> &gt; $<span class="number">1</span> &#125;)</div></pre></td></tr></table></figure>
+<ul>
+<li>二元运算时可以直接省略只用操作符表示</li>
+</ul>
+<p>当表达式只有一行时，二元运算的表达式可以直接省略到只剩一个运算符，最终可以简化为：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by:  &gt;)</div></pre></td></tr></table></figure>
 <h4 id="尾闭包"><a href="#尾闭包" class="headerlink" title="尾闭包"></a>尾闭包</h4><p>当函数的最后一个参数是闭包时，可以直接把最后一个闭包的实现跟在函数后面。</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 一个最后一个参数是闭包的函数</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">someFunctionThatTakesAClosure</span><span class="params">(closure: <span class="params">()</span></span></span> -&gt; <span class="type">Void</span>) &#123;</div><div class="line">	<span class="comment">// function body goes here</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 默认的调用方法</span></div><div class="line">someFunctionThatTakesAClosure(closure: &#123;</div><div class="line">	<span class="comment">// closure's body goes here</span></div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="comment">// 省略最后一个参数的参数名，并且把闭包的实现直接跟在函数后面</span></div><div class="line">someFunctionThatTakesAClosure() &#123;</div><div class="line">	<span class="comment">// trailing closure's body goes here</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>这种写法简化了代码，更加整洁</p>
@@ -383,6 +383,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
+          
+        </div>
       
 
       
@@ -402,6 +408,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/15/RX-第1篇-Hello-RxSwift！/" rel="prev" title="[RX]第1篇 Hello RxSwift！">
+                [RX]第1篇 Hello RxSwift！ <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -478,7 +488,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -486,6 +496,15 @@
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
           
 
         </nav>

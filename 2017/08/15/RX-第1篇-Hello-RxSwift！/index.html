@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS," />
 
 
 
@@ -94,13 +94,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="麻麻">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="第1篇 Hello RxSwift！说了这么多，到底什么是RxSwift？有以下定义：  RxSwift is a library for composing asynchronous and event-based code by using observable sequences and functional style operators, allowing for parameteriz">
+<meta name="keywords" content="iOS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[RX]第1篇 Hello RxSwift！">
+<meta property="og:url" content="http://yoursite.com/2017/08/15/RX-第1篇-Hello-RxSwift！/index.html">
 <meta property="og:site_name" content="麻麻">
+<meta property="og:description" content="第1篇 Hello RxSwift！说了这么多，到底什么是RxSwift？有以下定义：  RxSwift is a library for composing asynchronous and event-based code by using observable sequences and functional style operators, allowing for parameteriz">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-08-15T13:42:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="麻麻">
+<meta name="twitter:title" content="[RX]第1篇 Hello RxSwift！">
+<meta name="twitter:description" content="第1篇 Hello RxSwift！说了这么多，到底什么是RxSwift？有以下定义：  RxSwift is a library for composing asynchronous and event-based code by using observable sequences and functional style operators, allowing for parameteriz">
 
 
 
@@ -129,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/08/15/RX-第1篇-Hello-RxSwift！/"/>
 
 
 
 
 
-  <title>麻麻</title>
+  <title>[RX]第1篇 Hello RxSwift！ | 麻麻</title>
   
 
 
@@ -154,9 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +242,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,9 +274,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/15/RX-第1篇-Hello-RxSwift！/" itemprop="url">[RX]第1篇 Hello RxSwift！</a></h1>
+          <h1 class="post-title" itemprop="name headline">[RX]第1篇 Hello RxSwift！</h1>
         
 
         <div class="post-meta">
@@ -323,9 +324,7 @@
       
 
       
-        
-          
-            <h1 id="第1篇-Hello-RxSwift！"><a href="#第1篇-Hello-RxSwift！" class="headerlink" title="第1篇 Hello RxSwift！"></a>第1篇 Hello RxSwift！</h1><p>说了这么多，到底什么是RxSwift？<br>有以下定义：</p>
+        <h1 id="第1篇-Hello-RxSwift！"><a href="#第1篇-Hello-RxSwift！" class="headerlink" title="第1篇 Hello RxSwift！"></a>第1篇 Hello RxSwift！</h1><p>说了这么多，到底什么是RxSwift？<br>有以下定义：</p>
 <blockquote>
 <p>RxSwift is a library for composing asynchronous and event-based code by using observable sequences and functional style operators, allowing for parameterized execution via schedulers.</p>
 </blockquote>
@@ -438,8 +437,6 @@
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="type">UIDevice</span>.rx.orientation</div><div class="line">  .subscribe(onNext: &#123; current <span class="keyword">in</span></div><div class="line">    <span class="keyword">switch</span> current &#123;</div><div class="line">      <span class="keyword">case</span> .landscape:</div><div class="line">        ... re-arrange <span class="type">UI</span> <span class="keyword">for</span> landscape</div><div class="line">      <span class="keyword">case</span> .portrait:</div><div class="line">        ... re-arrange <span class="type">UI</span> <span class="keyword">for</span> portrait</div><div class="line">    &#125;</div><div class="line">  &#125;)</div></pre></td></tr></table></figure>
 <p><code>UIDevice.rx.orientation</code>是一个虚构的控件属性，它产生一个<code>Observable&lt;Orientation&gt;</code>。你订阅它并根据当前方向更新应用程序UI。 你跳过<code>onError</code>和<code>onCompleted</code>参数，因为这些事件永远不会从该<code>observable</code>实例发出。</p>
 
-          
-        
       
     </div>
     
@@ -454,304 +451,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/15/RX-第0篇-关于RxSwift/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Andy Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="麻麻">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/15/RX-第0篇-关于RxSwift/" itemprop="url">[RX]第0篇 关于RxSwift</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T21:35:31+08:00">
-                2017-08-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/iOS/" rel="tag"># iOS</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="第0篇-关于RxSwift"><a href="#第0篇-关于RxSwift" class="headerlink" title="第0篇 关于RxSwift"></a>第0篇 关于RxSwift</h1><h2 id="为什么是RxSwift？"><a href="#为什么是RxSwift？" class="headerlink" title="为什么是RxSwift？"></a>为什么是RxSwift？</h2><p>相对于Objc，swift契合响应式编程框架有以下几点：</p>
-<ul>
-<li>强类型，强类型的范型</li>
-<li>灵活的闭包</li>
-<li>对并发类型的原生支持<em>（Swift5新特性，还未发布）</em></li>
-</ul>
-<h3 id="Enum的关联值和范型"><a href="#Enum的关联值和范型" class="headerlink" title="Enum的关联值和范型"></a>Enum的关联值和范型</h3><p>Swift中的枚举（Enum）是一个完整的类型。而是一个完整的类型。和 Struct 一样，可以给他定义初始化方法，声明函数，添加扩展。同样的泛型同样也试用于 Enum。<br>枚举还有一项神奇的能力叫关联值。一个枚举可以的值可以是不同的类型。官方手册里的示例代码如下：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">enum</span> <span class="title">ServerResponse</span> </span>&#123;</div><div class="line">    <span class="keyword">case</span> result(<span class="type">String</span>, <span class="type">String</span>)</div><div class="line">    <span class="keyword">case</span> failure(<span class="type">String</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">let</span> success = <span class="type">ServerResponse</span>.result(<span class="string">"6:00 am"</span>, <span class="string">"8:09 pm"</span>)</div><div class="line"><span class="keyword">let</span> failure = <span class="type">ServerResponse</span>.failure(<span class="string">"Out of cheese."</span>)</div><div class="line"></div><div class="line"><span class="keyword">switch</span> success &#123;</div><div class="line"><span class="keyword">case</span> <span class="keyword">let</span> .result(sunrise, sunset):</div><div class="line">    <span class="built_in">print</span>(<span class="string">"Sunrise is at <span class="subst">\(sunrise)</span> and sunset is at <span class="subst">\(sunset)</span>."</span>)</div><div class="line"><span class="keyword">case</span> <span class="keyword">let</span> .failure(message):</div><div class="line">    <span class="built_in">print</span>(<span class="string">"Failure...  <span class="subst">\(message)</span>"</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>每个 case 可以携带不同的类型，并且可以不止是一个值。<br>当 Enum 结合泛型，就发生了有趣的事。直接贴代码：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">enum</span> <span class="title">OptionalValue</span>&lt;<span class="title">Wrapped</span>&gt; </span>&#123;</div><div class="line">    <span class="keyword">case</span> <span class="keyword">none</span></div><div class="line">    <span class="keyword">case</span> some(<span class="type">Wrapped</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> possibleInteger: <span class="type">OptionalValue</span>&lt;<span class="type">Int</span>&gt; = .<span class="keyword">none</span></div><div class="line">possibleInteger = .some(<span class="number">100</span>)</div></pre></td></tr></table></figure>
-<p>这就是 Swift 中的 Optional 实现的类似代码。使用枚举实现，表示值有两种可能：没有值的 .none 和是 Wrapped 类型的 .some。<br>有了以上的知识我们再来看 Rx 中的事件流中的值Event：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">Event</span>&lt;<span class="title">Element</span>&gt; </span>&#123;</div><div class="line">	<span class="comment">/// Next element is produced.</span></div><div class="line">	<span class="keyword">case</span> next(<span class="type">Element</span>)</div><div class="line">	</div><div class="line">	<span class="comment">/// Sequence terminated with an error.</span></div><div class="line">	<span class="keyword">case</span> error(<span class="type">Swift</span>.<span class="type">Error</span>)</div><div class="line">	</div><div class="line">	<span class="comment">/// Sequence completed successfully.</span></div><div class="line">	<span class="keyword">case</span> completed</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>每一次事件的值有三种可能：1.值（next），2.完成结束（completed），3.失败（error）。</p>
-<h3 id="函数的默认参数"><a href="#函数的默认参数" class="headerlink" title="函数的默认参数"></a>函数的默认参数</h3><p>如果函数在声明时设置了一个默认值，那么在调用时这个参数就可以不传。<br>假设我们给 Int 定义个扩展方法increment。如果不传入值则默认加1，如果传入就按照传入的值增加：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">extension</span> <span class="title">Int</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">increment</span><span class="params">(with number: Int = <span class="number">1</span>)</span></span> -&gt; <span class="type">Int</span> &#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">self</span> + number</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>使用的时候 Xcode 就会提示两个函数：</p>
-<p><img src="https://ws3.sinaimg.cn/large/006tKfTcly1fhoe4xjo74j30cs02374i.jpg" alt=""></p>
-<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><p>这里介绍一下新手很容易忽略的语法糖</p>
-<h4 id="闭包简化语法"><a href="#闭包简化语法" class="headerlink" title="闭包简化语法"></a>闭包简化语法</h4><ul>
-<li>闭包参数、返回值类型自动推断</li>
-</ul>
-<p>因为Swift是强类型语言，闭包的参数的类型可以推断出来。例如以下代码：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; (s1: <span class="type">String</span>, s2: <span class="type">String</span>) -&gt; <span class="type">Bool</span> <span class="keyword">in</span></div><div class="line"><span class="keyword">return</span> s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<p>s1和s2的类型和返回值类型Xcode可以推断出来，可省略：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; (s1, s2)  <span class="keyword">in</span></div><div class="line"><span class="keyword">return</span> s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<ul>
-<li>闭包表达式只有一行，可以省略<code>return</code></li>
-</ul>
-<p>因为只有一行，表达式执行的结果肯定就是要返回的值，所以可以省略：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by: &#123; </div><div class="line">       (s1, s2)  <span class="keyword">in</span>   s1 &gt; s2</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<ul>
-<li>用<code>$N</code>代替参数</li>
-</ul>
-<p>有时候实参的参数名没什么用，可以直接用<code>$N</code>代替实参，<code>$0</code>代表第一个参数。上面的代码简化后就变成这样：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by:  &#123; $<span class="number">0</span> &gt; $<span class="number">1</span> &#125;)</div></pre></td></tr></table></figure>
-<ul>
-<li>二元运算时可以直接省略只用操作符表示</li>
-</ul>
-<p>当表达式只有一行时，二元运算的表达式可以直接省略到只剩一个运算符，最终可以简化为：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">reversedNames = names.sorted(by:  &gt;)</div></pre></td></tr></table></figure>
-<h4 id="尾闭包"><a href="#尾闭包" class="headerlink" title="尾闭包"></a>尾闭包</h4><p>当函数的最后一个参数是闭包时，可以直接把最后一个闭包的实现跟在函数后面。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 一个最后一个参数是闭包的函数</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">someFunctionThatTakesAClosure</span><span class="params">(closure: <span class="params">()</span></span></span> -&gt; <span class="type">Void</span>) &#123;</div><div class="line">	<span class="comment">// function body goes here</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 默认的调用方法</span></div><div class="line">someFunctionThatTakesAClosure(closure: &#123;</div><div class="line">	<span class="comment">// closure's body goes here</span></div><div class="line">&#125;)</div><div class="line"></div><div class="line"><span class="comment">// 省略最后一个参数的参数名，并且把闭包的实现直接跟在函数后面</span></div><div class="line">someFunctionThatTakesAClosure() &#123;</div><div class="line">	<span class="comment">// trailing closure's body goes here</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>这种写法简化了代码，更加整洁</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Andy Ma">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="麻麻">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/15/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-15T20:43:39+08:00">
-                2017-08-15
-              </time>
+              <a href="/2017/08/15/RX-第0篇-关于RxSwift/" rel="next" title="[RX]第0篇 关于RxSwift">
+                <i class="fa fa-chevron-left"></i> [RX]第0篇 关于RxSwift
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -761,10 +490,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -772,6 +502,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -792,8 +526,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -846,6 +589,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第1篇-Hello-RxSwift！"><span class="nav-number">1.</span> <span class="nav-text">第1篇 Hello RxSwift！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#异步编程"><span class="nav-number">1.0.1.</span> <span class="nav-text">异步编程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#关于Cocoa和UIKit的异步API"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">关于Cocoa和UIKit的异步API</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#同步代码"><span class="nav-number">1.0.1.1.1.</span> <span class="nav-text">同步代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#异步代码"><span class="nav-number">1.0.1.1.2.</span> <span class="nav-text">异步代码</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异步编程的关键术语"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">异步编程的关键术语</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#状态（State），即共享可变状态（shared-mutable-state）"><span class="nav-number">1.0.1.2.1.</span> <span class="nav-text">状态（State），即共享可变状态（shared mutable state）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#命令式编程（Imperative-programming）"><span class="nav-number">1.0.1.2.2.</span> <span class="nav-text">命令式编程（Imperative programming）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#副作用（Side-effects）"><span class="nav-number">1.0.1.2.3.</span> <span class="nav-text">副作用（Side effects）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#声明式代码（Declarative-code）"><span class="nav-number">1.0.1.2.4.</span> <span class="nav-text">声明式代码（Declarative code）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#响应式系统（Reactive-systems）"><span class="nav-number">1.0.1.2.5.</span> <span class="nav-text">响应式系统（Reactive systems）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RxSwift基础"><span class="nav-number">1.0.2.</span> <span class="nav-text">RxSwift基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Observables（可观察对象）"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">Observables（可观察对象）</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#有限observable序列"><span class="nav-number">1.0.2.1.1.</span> <span class="nav-text">有限observable序列</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#无限observable序列"><span class="nav-number">1.0.2.1.2.</span> <span class="nav-text">无限observable序列</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -969,10 +728,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
