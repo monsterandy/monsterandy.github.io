@@ -1,0 +1,6 @@
+@inproceedings{tan24sok,
+  author = {Tan, Xi and Ma, Zheyuan and Pinto, Sandro and Guan, Le and Zhang, Ning and Xu, Jun and Lin, Zhiqiang and Hu, Hongxin and Zhao, Ziming},
+  title = {{SoK: Where's the ``up''?! A Comprehensive (bottom-up) Study on the Security of Arm Cortex-M Systems}},
+  booktitle = {{USENIX WOOT Conference on Offensive Technologies}},
+  year = {2024}
+}

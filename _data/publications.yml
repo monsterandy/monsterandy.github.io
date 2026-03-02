@@ -3,7 +3,7 @@ main:
   - title: "MICROFT: Exploring and Mitigating Cross-state Control-flow Hijacking Attacks on ARM Cortex-M TrustZone"
     authors: <strong>Zheyuan Ma</strong>, Xi Tan, Lukasz Ziarek, Ning Zhang, Shambhu Upadhyaya, Hongxin Hu, and Ziming Zhao
     conference_short: TIFS
-    conference: IEEE Transactions on Information Forensics and Security <strong>(TIFS)</strong>, 2025.
+    conference: IEEE Transactions on Information Forensics and Security <strong>(TIFS)</strong>, 2025
     pdf: https://cactilab.github.io/assets/pdf/ma2025microft.pdf
     code: https://github.com/CactiLab/ret2ns-Cortex-M-TrustZone
     doi: https://doi.org/10.1109/TIFS.2025.3625394
@@ -11,23 +11,25 @@ main:
     # image: ./assets/img/teaser_example_2.png
     notes: Journal Version
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
+  - title: "'We just did not have that on the embedded system': Insights and Challenges for Securing Microcontroller Systems from the Embedded CTF Competitions"
+    authors: <strong>Zheyuan Ma</strong>, Gaoxiang Liu, Alex Eastman, Kai Kaufman, Md Armanuzzaman, Xi Tan, Katherine Jesse, Robert Walls, and Ziming Zhao
+    conference_short: ACM CCS
+    conference: ACM Conference on Computer and Communications Security <strong>(CCS)</strong>, 2025
+    pdf: https://cactilab.github.io/assets/pdf/ma2025ectf.pdf
+    code: https://github.com/CactiLab/eCTF-User-Study-Material
+    doi: https://doi.org/10.1145/3719027.3765039
+    bibtex: ./assets/bib/ma2025ectf.txt
     # image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+    # notes: Early Accept
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
+  - title: "SoK: Where’s the “up”?! A Comprehensive (bottom-up) Study on the Security of Arm Cortex-M Systems"
+    authors: Xi Tan, <strong>Zheyuan Ma</strong>, Sandro Pinto, Le Guan, Ning Zhang, Jun Xu, Zhiqiang Lin, Hongxin Hu, and Ziming Zhao
+    conference_short: WOOT
+    conference: USENIX WOOT Conference on Offensive Technologies <strong>(WOOT)</strong>, 2024
+    pdf: https://cactilab.github.io/assets/pdf/tan2024sok.pdf
+    code: https://github.com/CactiLab/SoK-Cortex-M
+    doi: https://dl.acm.org/doi/10.5555/3696933.3696945
+    bibtex: ./assets/bib/tan2024sok.txt
     # image: ./assets/img/teaser_example_2.png
     notes: Early Accept
 
