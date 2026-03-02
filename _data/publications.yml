@@ -6,7 +6,8 @@ main:
     conference: IEEE Transactions on Information Forensics and Security <strong>(TIFS)</strong>, 2025.
     pdf: https://cactilab.github.io/assets/pdf/ma2025microft.pdf
     code: https://github.com/CactiLab/ret2ns-Cortex-M-TrustZone
-    bibtex: ./assets/bib/ma2025microft.bib
+    doi: https://doi.org/10.1109/TIFS.2025.3625394
+    bibtex: ./assets/bib/ma2025microft.txt
     # image: ./assets/img/teaser_example_2.png
     notes: Journal Version
 
