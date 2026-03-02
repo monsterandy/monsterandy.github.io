@@ -7,6 +7,7 @@ main:
     pdf: https://cactilab.github.io/assets/pdf/ma2025microft.pdf
     code: https://github.com/CactiLab/ret2ns-Cortex-M-TrustZone
     doi: https://doi.org/10.1109/TIFS.2025.3625394
+    page: https://doi.org/10.1109/TIFS.2025.3625394
     bibtex: ./assets/bib/ma2025microft.txt
     # image: ./assets/img/teaser_example_2.png
     notes: Journal Version
@@ -18,6 +19,7 @@ main:
     pdf: https://cactilab.github.io/assets/pdf/ma2025ectf.pdf
     code: https://github.com/CactiLab/eCTF-User-Study-Material
     doi: https://doi.org/10.1145/3719027.3765039
+    page: https://doi.org/10.1145/3719027.3765039
     bibtex: ./assets/bib/ma2025ectf.txt
     # image: ./assets/img/teaser_example_2.png
     # notes: Early Accept
@@ -29,17 +31,44 @@ main:
     pdf: https://cactilab.github.io/assets/pdf/tan2024sok.pdf
     code: https://github.com/CactiLab/SoK-Cortex-M
     doi: https://dl.acm.org/doi/10.5555/3696933.3696945
+    page: https://www.usenix.org/conference/woot24/presentation/tan
     bibtex: ./assets/bib/tan2024sok.txt
     # image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+    # notes: Early Accept
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    # image: ./assets/img/teaser_example.png
+  - title: "Trusted Execution Environments in Embedded and IoT Systems: A CactiLab Perspective"
+    authors: Ziming Zhao, Md Armanuzzaman, Xi Tan, and <strong>Zheyuan Ma</strong>
+    conference_short: SEED
+    conference: IEEE International Symposium on Secure and Private Execution Environment Design <strong>(SEED)</strong>, 2024
+    pdf: https://cactilab.github.io/assets/pdf/zhao2024seed.pdf
+    doi: https://doi.org/10.1109/SEED61283.2024.00020
+    page: https://doi.org/10.1109/SEED61283.2024.00020
+    bibtex: ./assets/bib/zhao2024seed.txt
+
+  - title: "Is the Canary Dead? On the Effectiveness of Stack Canaries on Microcontroller Systems"
+    authors: Xi Tan, Sagar Mohan, Md Armanuzzaman, <strong>Zheyuan Ma</strong>, Gaoxiang Liu, Alex Eastman, Hongxin Hu, and Ziming Zhao
+    conference_short: SAC
+    conference: ACM/SIGAPP Symposium On Applied Computing <strong>(SAC)</strong>, 2024
+    pdf: https://cactilab.github.io/assets/pdf/canary2024xi.pdf
+    doi: https://doi.org/10.1145/3605098.3635925
+    page: https://doi.org/10.1145/3605098.3635925
+    bibtex: ./assets/bib/tan24canary.txt
+
+  - title: "Understanding and Analyzing COVID-19-related Online Hate Propagation Through Hateful Memes Shared on Twitter"
+    authors: Nishant Vishwamitra, Keyan Guo, Liao Song, Jaden Mu, <strong>Zheyuan Ma</strong>, Long Cheng, Ziming Zhao, and Hongxin Hu
+    conference_short: ASONAM
+    conference: IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining <strong>(ASONAM)</strong>, 2023
+    pdf: https://dl.acm.org/doi/pdf/10.1145/3625007.3630111
+    doi: https://doi.org/10.1145/3625007.3630111
+    page: https://doi.org/10.1145/3625007.3630111
+    bibtex: ./assets/bib/vishwamitra2023understanding.txt
+
+  - title: "Return-to-Non-Secure Vulnerabilities on ARM Cortex-M TrustZone: Attack and Defense"
+    authors: <strong>Zheyuan Ma</strong>, Xi Tan, Lukasz Ziarek, Ning Zhang, Hongxin Hu, and Ziming Zhao
+    conference_short: DAC
+    conference: ACM/IEEE Design Automation Conference <strong>(DAC)</strong>, 2023
+    pdf: https://cactilab.github.io/assets/pdf/ret2ns2023.pdf
+    code: https://github.com/CactiLab/ret2ns-Cortex-M-TrustZone
+    doi: https://doi.org/10.1109/DAC56929.2023.10247972
+    page: https://doi.org/10.1109/DAC56929.2023.10247972
+    bibtex: ./assets/bib/ma2023return.txt

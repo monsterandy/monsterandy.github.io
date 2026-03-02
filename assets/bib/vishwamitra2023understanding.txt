@@ -1,0 +1,7 @@
+@inproceedings{vishwamitra2023understanding,
+  title={Understanding and analyzing covid-19-related online hate propagation through hateful memes shared on twitter},
+  author={Vishwamitra, Nishant and Guo, Keyan and Liao, Song and Mu, Jaden and Ma, Zheyuan and Cheng, Long and Zhao, Ziming and Hu, Hongxin},
+  booktitle={Proceedings of the International Conference on Advances in Social Networks Analysis and Mining},
+  pages={103--107},
+  year={2023}
+}

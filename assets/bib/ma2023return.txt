@@ -1,0 +1,8 @@
+@inproceedings{ma2023return,
+  title={Return-to-non-secure vulnerabilities on arm cortex-m trustzone: Attack and defense},
+  author={Ma, Zheyuan and Tan, Xi and Ziarek, Lukasz and Zhang, Ning and Hu, Hongxin and Zhao, Ziming},
+  booktitle={2023 60th ACM/IEEE Design Automation Conference (DAC)},
+  pages={1--6},
+  year={2023},
+  organization={IEEE}
+}
