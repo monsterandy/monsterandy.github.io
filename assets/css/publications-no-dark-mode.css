@@ -29,8 +29,13 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   }
 
   .publications .pub-row .abbr {
-    flex: 0 0 70px;
-    max-width: 100px;
+    flex: 0 0 9.75rem;
+    max-width: 9.75rem;
+  }
+
+  .publications .pub-row .abbr.has-image {
+    flex: 0 0 270px;
+    max-width: 270px;
   }
 
   .publications .pub-row .col-sm-9 {
