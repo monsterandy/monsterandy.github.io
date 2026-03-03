@@ -67,7 +67,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li .abbr { height: 8rem; margin-bottom: 0.5rem; }
 
-.publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); width: 5rem; min-width: 5rem; max-width: 5rem; padding-left: 0.5rem; padding-right: 0.5rem; box-sizing: border-box; position: absolute; top: 8px; left: 0; }
+.publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); width: 5rem; min-width: 5rem; max-width: 5rem; padding-left: 0rem; padding-right: 0rem; box-sizing: border-box; position: absolute; top: 8px; left: 0; }
 .publications ol.bibliography li .abbr.has-image abbr { left: 16px; }
 
 .publications ol.bibliography li .abbr abbr a { color: white; }
