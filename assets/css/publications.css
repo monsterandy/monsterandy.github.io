@@ -31,8 +31,8 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   }
 
   .publications .pub-row .abbr {
-    flex: 0 0 6.25rem;
-    max-width: 6.25rem;
+    flex: 0 0 6rem;
+    max-width: 6rem;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
