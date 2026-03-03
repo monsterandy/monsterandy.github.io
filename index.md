@@ -15,8 +15,8 @@ I am a Ph.D. candidate in Computer Science and Engineering at the University at 
 
 ## News
 
-- **[Aug. 2025]** [Paper] Our paper entitled “‘We just did not have that on the embedded system’: Insights and Challenges for Securing Microcontroller Systems from the Embedded CTF Competitions” will appear in ACM CCS ‘25!
-- **[May. 2024]** [Paper] Our paper entitled “SoK: Where’s the “up”?! A Comprehensive (bottom-up) Study on the Security of Arm Cortex-M Systems” will appear in USENIX WOOT ‘24!
-- **[May. 2024]** [CTF] Team Cacti, led by Gaoxiang Liu and Zheyuan Ma, placed in 4th place in the 2024 Embedded CTF (eCTF) competition organized by MITRE!
-- **[May. 2023]** [CTF] Team Cacti, led by Zheyuan Ma, placed in 4th place in the 2023 Embedded CTF (eCTF) competition organized by MITRE!
-- **[Feb. 2023]** [Paper] Our paper entitled “Return-to-Non-Secure Vulnerabilities on ARM Cortex-M TrustZone: Attack and Defense” will appear in DAC ‘24!
+- **[Aug. 2025]** **[Paper]** Our paper entitled “‘We just did not have that on the embedded system’: Insights and Challenges for Securing Microcontroller Systems from the Embedded CTF Competitions” will appear in **ACM CCS ‘25**!
+- **[May. 2024]** **[Paper]** Our paper entitled “SoK: Where’s the “up”?! A Comprehensive (bottom-up) Study on the Security of Arm Cortex-M Systems” will appear in **USENIX WOOT ‘24**!
+- **[May. 2024]** **[CTF]** Team Cacti, led by Gaoxiang Liu and Zheyuan Ma, placed in **4th place** in the 2024 Embedded CTF (eCTF) competition organized by MITRE!
+- **[May. 2023]** **[CTF]** Team Cacti, led by Zheyuan Ma, placed in **4th place** in the 2023 Embedded CTF (eCTF) competition organized by MITRE!
+- **[Feb. 2023]** **[Paper]** Our paper entitled “Return-to-Non-Secure Vulnerabilities on ARM Cortex-M TrustZone: Attack and Defense” will appear in **DAC ‘24**!
