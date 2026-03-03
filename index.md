@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. candidate in Computer Science and Engineering at the University at Buffalo (SUNY). My advisor is [Prof. Ziming Zhao](https://zzm7000.github.io/). My background is mainly in embedded firmware development and system security, especially low-level C programming, debugging, and performance analysis on microcontrollers.
+I am a Ph.D. candidate in Computer Science and Engineering at the University at Buffalo (SUNY). My advisor is <a href="https://zzm7000.github.io/" target="_blank" rel="noopener">Prof. Ziming Zhao</a>. My background is mainly in embedded firmware development and system security, especially low-level C programming, debugging, and performance analysis on microcontrollers.
 
 ## Skills
 
